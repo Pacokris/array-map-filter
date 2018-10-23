@@ -24,6 +24,12 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  let reponse = names.filter(function (param) {
+    if (param.endsWith("Stark")){
+      return param
+    }
+  })
+  return reponse
 }
 
 // Ne pas modifier l'export

@@ -20,8 +20,12 @@ En sortie: [
 ]
 
  */
+function getStringsLength(param){
+  let reponse = param.map(function(string) {
+    return string + " contains " + string.length + " characters"
+})
 
-function getStringsLength(strings) {
+  return reponse;
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
